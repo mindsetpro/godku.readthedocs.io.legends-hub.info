@@ -1,129 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>godku docs</title>
+  <title>Mod Apk</title>
 
-  <!-- Discord Embed CSS -->
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/leovoel/embed-visualizer/master/src/css/discord.css">
+  <script src="https://cdn.jsdelivr.net/npm/discord-embed-js@1.1.0/discord-embed.min.js"></script>
 
-  <style>
-    body {
-      background: #36393f;
-      font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 50px auto;  
-      padding: 0 15px;
-    }
-    
-    .title {
-      color: #fff;
-      text-align: center; 
-    }
-  </style>
+</head>  
+
+<body>
+
+  <h1>Mod Apk</h1>
+
+  <p>You can download godku mod apk. There are different versions to fit what you want.</p>
+  
+  <p><strong>What's the difference between 32bit and 64bit?</strong></p>
+  <p>32bit is more compatible and can be sometimes more fluid while 64bit is more stable and will experience fewer crashes.</p>
+  
+  <p><strong>What's the difference between basic and injection version?</strong></p>
+  <p>Injection version maxes all your characters like the bot does but cannot be deactivated. While the basic version doesn't do that, so you still have to use the bot to max your characters.</p>
+
+  <div id="discord-embed"></div>
 
   <script>
-    function randomColor() {
-      var color = '#';
-      for (var i = 0; i < 6; i++) {
-        color += Math.floor(Math.random() * 16).toString(16);
-      }
-      return color;
-    }
-
-    function setColor() {
-      var embed = document.getElementsByClassName("embed-content")[0];
-      var color = randomColor();
-      embed.style.borderColor = color; 
-    }
+    new DiscordEmbed({
+      title: 'Join the Discord!',
+      description: 'Join our Discord server to chat with other users, get support and stay updated on new releases.',
+      url: 'https://discord.gg/Qpfx8UHjxt',
+      color: 0x5865F2, 
+      footer: {
+        text: '@darklaser38 & @mindset'  
+      },
+      fields: [
+        {
+          name: 'Download Links',
+          value: '32bit Basic Version: [Download Here](https://www.mediafire.com/file/cvrm5q0u8fj8yzr/Godku_ModMenu_Basic_32Bit_DBL_4.34.0.apk/file)\n32bit Injector Version: [Download Here](https://www.mediafire.com/file/45sxnmmsg3mfxap/Godku_ModMenu_Injection_32Bit_DBL_4.34.0.apk/file)\n64bit Basic Version: [Download Here](https://www.mediafire.com/file/iwelwaspmliqpzw/Godku_ModMenu_Basic_64Bit_DBL_4.34.0.apk/file)\n64bit Injector Version: [Download Here](https://www.mediafire.com/file/vmdffh3bxg0fkht/Godku_ModMenu_injection_64Bit_DBL_4.34.0.apk/file)'
+        }
+      ]
+    }).attachTo('#discord-embed');
   </script>
-
-</head>
-
-<body onload="setColor()">
-
-<div class="container">
-
-  <div class="title">
-    <h1>godku docs</h1> 
-  </div>
-
-  <div class="discord-embed">
-
-    <div class="embed-content">
-    
-      <div class="embed-author">
-        <img class="embed-author-icon" src="https://images-ext-1.discordapp.net/external/3ckwvuOzZJi-kYn9ozfCDoe1PT8w5arE2Hg5EbEqMZs/https/cdn.discordapp.com/icons/1207145346447441960/b4381e367285d4f254412d1b23a32434.png?format=webp&quality=lossless">  
-        <span class="embed-author-name">godku</span>
-      </div>
-      
-      <div class="embed-title">
-        <span class="embed-author-name"></span>        
-        Mod Apk
-      </div>
-      
-      <div class="embed-description">
-       
-        <span>You can download godku mod apk down below!!</span> 
-               
-        <p class="embed-desc"><strong>Download Links are below!</strong></p>
-               
-      </div>
-      
-      <div class="embed-fields">
-       
-        <div class="embed-field">
-          <span class="embed-field-name">
-            32bit Basic Version
-          </span>
-          <span class="embed-field-value"> 
-            <a href="https://www.mediafire.com/file/cvrm5q0u8fj8yzr/Godku_ModMenu_Basic_32Bit_DBL_4.34.0.apk/file">Download</a>
-          </span>
-        </div>
-
-        <div class="embed-field">
-          <span class="embed-field-name">
-            32bit Injector Version
-          </span>
-          <span class="embed-field-value"> 
-            <a href="https://www.mediafire.com/file/45sxnmmsg3mfxap/Godku_ModMenu_Injection_32Bit_DBL_4.34.0.apk/file">Download</a>
-          </span>
-        </div>
-
-        <div class="embed-field">
-          <span class="embed-field-name">
-            64bit Basic Version
-          </span>
-          <span class="embed-field-value"> 
-            <a href="https://www.mediafire.com/file/iwelwaspmliqpzw/Godku_ModMenu_Basic_64Bit_DBL_4.34.0.apk/file">Download</a>
-          </span>
-        </div>
-
-        <div class="embed-field">
-          <span class="embed-field-name">
-            64bit Injector Version
-          </span>
-          <span class="embed-field-value"> 
-            <a href="https://www.mediafire.com/file/vmdffh3bxg0fkht/Godku_ModMenu_injection_64Bit_DBL_4.34.0.apk/file">Download</a>
-          </span>
-        </div>
-               
-      </div>
-
-      <div class="embed-footer">
-        <a class="embed-footer-icon embed-footer-icon-discord" href="https://discord.gg/Qpfx8UHjxt">
-          <i class="fab fa-discord"></i>
-        </a>  
-      </div>
-      
-    </div>
-
-  </div>
-
-</div>
 
 </body>
 </html>
